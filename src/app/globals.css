@@ -18,7 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #060316;
+  background: #08070B;
 }
 
 @layer utilities {
@@ -26,10 +26,3 @@ body {
     text-wrap: balance;
   }
 }
-/* 
-#spline canvas {
-  width: 400px !important; 
-  height: 120% !important;
-  scale:150%;
-
-} */
