@@ -46,7 +46,7 @@ const Home = () => {
         Dream. Design. Develop
 </h1>
 <div className="my-8"><img className="rounded-3xl " src="/images/photo.jpeg" /></div>
-<div className="my-4"><p className="text-[0.8rem] leading-loose opacity-70">Hey there! I'm Dimple, a tech nerd who gets more excited about a perfectly centered div than a perfectly centered social life. When I'm not debugging my social skills (it's a work in progress), you can find me blasting music like a rogue compiler with a caffeine dependency – all while sipping on some milk in the dark mode glow that protects my retinas from the horrors of light mode (because light mode is the work of illuminati anyway). Let's build something that breaks the internet...together!</p></div>
+<div className="my-4"><p className="text-[0.8rem] leading-loose opacity-70">Hey there! I am Dimple, a tech nerd who gets more excited about a perfectly centered div than a perfectly centered social life. When I am not debugging my social skills , you can find me blasting music like a rogue compiler with a caffeine dependency – all while sipping on some milk in the dark mode glow that protects my retinas from the horrors of light mode (because light mode is the work of illuminati anyway). Lets build something that breaks the internet...together!</p></div>
 <div className="my-4"><h2 className="font-bold opacity-80 text-lg">How I would Define myself...literally</h2> <img className="rounded-xl my-4" src="/images/embed.png"></img></div>
 <div>
 <h2 className="font-bold opacity-80 my-4 text-lg">Tech I have Played with</h2>
