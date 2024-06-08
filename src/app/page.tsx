@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Spline from '@splinetool/react-spline';
+import Link from "next/link";
 const Home = () => {
   const [isLgScreen, setIsLgScreen] = useState(false);
 
@@ -31,22 +32,24 @@ const Home = () => {
       />
         </div>
       ) : (
-        <div className="p-4">
-          <nav className="flex items-center justify-between mb-4">
-            <div className="font-extrabold">D</div>
+        <>
+        <nav className="fixed px-4 mt-4 mx-4 border border-white/50 rounded-2xl w-[90%] h-8 flex bg-black/80 justify-between z-10 ">
+            <div className="font-extrabold mt-1">D</div>
             <div className="flex text-[0.5rem] justify-center items-center gap-8">
-              <div>About </div>
-              <div>Projects</div>
-              <div>Contact</div>
+              <div className="hover:underline"><a id="link" href="#about">About</a> </div>
+              <div className="hover:underline"><a id="link" href="#projects">Projects</a> </div>
+              <div className="hover:underline"><a id="link" href="#contact">Contact</a> </div>
             </div>
           </nav>
-          <h1
-  className="font-extrabold my-8 text-transparent text-5xl bg-clip-text bg-gradient-to-r from-[#8FAEE0] to-[#F0B2BD]"
+        <div className="p-4">
+          
+          <h1 id="about"
+  className="font-extrabold my-8 mt-12 text-transparent text-5xl bg-clip-text bg-gradient-to-r from-[#8FAEE0] to-[#F0B2BD]"
 >
         Dream. Design. Develop
 </h1>
 <div className="my-8"><img className="rounded-3xl " src="/images/photo.jpeg" /></div>
-<div className="my-4"><p className="text-[0.8rem] leading-loose opacity-70">Hey there! I am Dimple, a tech nerd who gets more excited about a perfectly centered div than a perfectly centered social life. When I am not debugging my social skills , you can find me blasting music like a rogue compiler with a caffeine dependency – all while sipping on some milk in the dark mode glow that protects my retinas from the horrors of light mode (because light mode is the work of illuminati anyway). Lets build something that breaks the internet...together!</p></div>
+<div className="my-4"><p className="text-[0.8rem] leading-loose text-white/70">Hey there! I am <b className="text-white">Dimple</b>, a tech nerd who gets more excited about a perfectly centered div than a perfectly centered social life. When I am not <b className="text-white">debugging</b> my social skills , you can find me blasting music like a rogue compiler with a <b className="text-white">caffeine</b> dependency – all while sipping on some milk in the <b className="text-white">dark mode</b>  glow that protects my retinas from the horrors of light mode (because light mode is the work of illuminati anyway). Lets <b className="text-white">build</b> something that breaks the internet...<b className="text-white">together!</b><br></br><b className="text-white">Spoiler alert!</b> This portfolio does a total wardrobe change on desktop. (^^) </p></div>
 <div className="my-4"><h2 className="font-bold opacity-80 text-lg">How I would Define myself...literally</h2> <img className="rounded-xl my-4" src="/images/embed.png"></img></div>
 <div>
 <h2 className="font-bold opacity-80 my-4 text-lg">Tech I have Played with</h2>
@@ -75,8 +78,8 @@ const Home = () => {
 <img width="48" height="48" src="https://img.icons8.com/color/48/figma--v1.png" alt="figma--v1"/>
 </div>
 </div>
-<h1
-  className="font-extrabold text-5xl text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#D6FAE4] to-[#6590D5]"
+<h1 id="projects"
+  className="font-extrabold text-3xl text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#D6FAE4] to-[#6590D5]"
 >
         Built.
         Played. 
@@ -85,29 +88,41 @@ const Home = () => {
 <h2 className="my-4 opacity-70 text-[0.7rem]">Here is some cool stuff I have built!</h2>
 
 <div className="grid grid-cols-2 my-4">
-  <div><img className="scale-[70%]" src="/images/folder.png"/> <h6 className="flex items-center justify-center pr-[2rem] align-center mx-2 text-[0.7rem]">CaptionCraft</h6></div>
-  <div><img className="scale-[70%]" src="/images/folder.png"/> <h6 className="flex items-center justify-center pr-[2rem] align-center mx-2 text-[0.7rem]">CaptionCraft v2</h6></div>
-  <div><img className="scale-[70%]" src="/images/folder.png"/> <h6 className="flex items-center justify-center pr-[2rem] align-center mx-2 text-[0.7rem]">Nsut.ai</h6></div>
-  <div><img className="scale-[70%]" src="/images/folder.png"/> <h6 className="flex items-center justify-center pr-[2rem] align-center mx-2 text-[0.7rem]">chipichipi runner</h6></div>
-  <div><img className="scale-[70%]" src="/images/folder.png"/> <h6 className="flex items-center justify-center pr-[2rem] align-center mx-2 text-[0.7rem]">Doc.io</h6></div>
+  <div><Link href="https://captioncraft.dimple.me/"><img className="scale-[70%]" src="/images/folder.png"/></Link> <h6 className="flex items-center justify-center pr-[2rem] align-center mx-2 text-[0.7rem]">CaptionCraft</h6></div>
+  <div><Link href="https://github.com/GitHoobar/cc"><img className="scale-[70%]" src="/images/folder.png"/></Link> <h6 className="flex items-center justify-center pr-[2rem] align-center mx-2 text-[0.7rem]">CaptionCraft v2</h6></div>
+  <div><Link href="https://nsutai.vercel.app/"><img className="scale-[70%]" src="/images/folder.png"/></Link> <h6 className="flex items-center justify-center pr-[2rem] align-center mx-2 text-[0.7rem]">Nsut.ai</h6></div>
+  <div><Link href="https://limo-git.github.io/dubidubidu/"><img className="scale-[70%]" src="/images/folder.png"/></Link> <h6 className="flex items-center justify-center pr-[2rem] align-center mx-2 text-[0.7rem]">chipichipi runner</h6></div>
+  <div><Link href="https://github.com/limo-git/doc.io"><img className="scale-[70%]" src="/images/folder.png"/></Link> <h6 className="flex items-center justify-center pr-[2rem] align-center mx-2 text-[0.7rem]">Doc.io</h6></div>
 
 </div>
 
-<h1
-  className="font-extrabold mb-4 mt-8 text-5xl text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#F4D79D] to-[#f0b2bd]"
+<h1 id="contact"
+  className="font-extrabold mb-4 mt-8 text-3xl text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#F4D79D] to-[#f0b2bd]"
 >
         Connect. Create. Community.
 </h1> 
 <h2 className="my-4 opacity-70 text-[0.7rem]">check me out on my socials!</h2>
 <div className="flex justify-center items-center">
-  <img className="scale-[55%]" src="/images/linkedin.png" />
-  <img className="scale-50" src="/images/github.png" />
-  <img className="scale-50" src="/images/mail.png" />
+ <Link href="https://www.linkedin.com/in/dimple-yadav-149344202/"><img className="scale-[55%]" src="/images/linkedin.png" /></Link> 
+ <Link href="https://github.com/limo-git"><img className="scale-50" src="/images/github.png" /></Link> 
+ <Link href="mailto:dimple.yadav.ug23@nsut.ac.in"><img className="scale-50" src="/images/mail.png" /></Link> 
 
 </div>
-
-          
+<div className="relative left-[38%] my-4 group w-20 cursor-pointer">
+            <div
+                className="absolute -inset-1 h-1- bg-gradient-to-r from-[#F4D79D] to-[#f0b2bd] rounded-2xl blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
+            </div>
+            <div
+                className="relative bg-black/90 px-2 rounded-2xl leading-none flex items-center justify-center ">
+                <div>
+                    <button className="text-white/70 font-bold h-8 text-[0.5rem]"><a href="/images/resume.pdf" download="resume.pdf">Download Resume</a></button>
+                </div>
+            </div>
         </div>
+
+
+        </div>
+        </>
       )}
     </>
   );
