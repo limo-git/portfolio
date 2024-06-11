@@ -48,7 +48,7 @@ const Home = () => {
 >
         Dream. Design. Develop
 </h1>
-<div className="my-8"><img className="rounded-3xl " src="/images/photo.jpeg" /></div>
+<div className="my-8"><img className="rounded-3xl " src="/images/memoji.png" /></div>
 <div className="my-4"><p className="text-[0.8rem] leading-loose text-white/70">Hey there! I am <b className="text-white">Dimple</b>, a tech nerd who gets more excited about a perfectly centered div than a perfectly centered social life. When I am not <b className="text-white">debugging</b> my social skills , you can find me blasting music like a rogue compiler with a <b className="text-white">caffeine</b> dependency – all while sipping on some milk in the <b className="text-white">dark mode</b>  glow that protects my retinas from the horrors of light mode (because light mode is the work of illuminati anyway). Lets <b className="text-white">build</b> something that breaks the internet...<b className="text-white">together!</b><br></br><b className="text-white">Spoiler alert!</b> This portfolio does a total wardrobe change on desktop. (^^) </p></div>
 <div className="my-4"><h2 className="font-bold opacity-80 text-lg">How I would Define myself...literally</h2> <img className="rounded-xl my-4" src="/images/embed.png"></img></div>
 <div>
