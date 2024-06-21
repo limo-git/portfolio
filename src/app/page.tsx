@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import Link from 'next/link';
-import Loader from '../../../components/Loader';
+import Loader from '../../components/Loader';
 
 
 const Spline = lazy(() => import('@splinetool/react-spline'));

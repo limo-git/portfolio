@@ -1,0 +1,129 @@
+
+  .loaderWrapper {
+    height: 90px;
+    overflow: hidden;
+  }
+  
+  .loaderInner {
+    position: relative;
+    animation-name: languageSwitch;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.4s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .loader {
+    display: flex;
+    align-items: baseline;
+    width: auto;
+    width: 190px;
+    height: 90px;
+  }
+  
+  .letter {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: white;
+    animation-name: letterAppears;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    width: 1px;
+    visibility: hidden;
+    animation-delay: 1.5s;
+  }
+  
+  .letterO {
+    background-color: white;
+    height: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    animation-name: loader;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    border: 10px solid white;
+  }
+  
+  .welcome {
+    font-family: sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: white;
+    height: 90px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* animation keyframes */
+  
+  @keyframes loader {
+    0% {
+      width: 1px;
+    }
+    60% {
+      background-color: white;
+      width: 100%;
+    }
+    90% {
+      background-color: black;
+    }
+    100% {
+      background-color: black;
+      width: 100%;
+    }
+  }
+  
+  @keyframes letterAppears {
+    0% {
+      width: 1px;
+      transform: rotate(15deg);
+    }
+    100% {
+      width: 100%;
+      transform: rotate(0);
+      visibility: visible;
+    }
+  }
+  
+  @keyframes languageSwitch {
+    0% {
+      bottom: 0;
+    }
+    15% {
+      bottom: 0;
+    }
+    20% {
+      bottom: 90px;
+    }
+    35% {
+      bottom: 90px;
+    }
+    40% {
+      bottom: 180px;
+    }
+    55% {
+      bottom: 180px;
+    }
+    60% {
+      bottom: 270px;
+    }
+    75% {
+      bottom: 270px;
+    }
+    80% {
+      bottom: 360px;
+    }
+    95% {
+      bottom: 360px;
+    }
+    100% {
+      bottom: 450px;
+    }
+  }
+  
